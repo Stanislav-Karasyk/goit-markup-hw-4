@@ -146,23 +146,31 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: inline-flex;
 }
 
-.link-tel {
+/* .link-tel {
   color: var(--primary-text-color);
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
+} */
 
-.contacts .contacts-link:hover,
-.contacts .contacts-link:focus {
+/* .contacts .contacts-link:hover .svg-mail,
+.contacts .contacts-link:focus .svg-mail {
   color: var(--accent-color);
+  fill: var(--accent-color);
+} */
+
+.contacts .contacts-link:hover .svg-mail {
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
-.svg-mail:hover {
+.contacts .contacts-link:hover .svg-phone {
+  color: var(--accent-color);
   fill: var(--accent-color);
 }
 
@@ -170,21 +178,23 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 
 .svg-phone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 
 .contact-item-mail {
   margin-right: 50px;
 }
 
-.contact-item-phone {
+/* .contact-item-phone {
   display: flex;
-}
+} */
 
 /* ==========HEADER END========== */
 
@@ -341,15 +351,10 @@ img {
   background-color: var(--white-color);
 
   text-align: center;
-  padding-bottom: 30px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-list-item-img {
-  margin-bottom: 30px;
 }
 
 .team-title {
@@ -381,6 +386,44 @@ img {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+
+  background-color: var(--white-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-icon,
+.social-list-link:focus .social-icon {
+  fill: var(--white-color);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: #afb1b8;
+}
+
+.team-card-info {
+  padding: 30px 32px;
 }
 
 /* ==========TEAM END========== */
